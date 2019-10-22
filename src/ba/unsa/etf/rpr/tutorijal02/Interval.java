@@ -9,7 +9,7 @@ public class Interval {
 
     public Interval(double pocetak, double kraj, boolean daLiPripadaPocetak, boolean daLiPripadaKraj) {
 
-        if( pocetak > kraj ) throw IllegalArgumentException
+        if( pocetak > kraj ) throw new IllegalArgumentException("");
 
         this.pocetak = pocetak;
         this.kraj = kraj;
@@ -23,11 +23,22 @@ public class Interval {
 
     }
 
-    public isNull(){
+    public boolean isNull(){
         if(pocetak == 0 && kraj == 0){
             return true;
         }
         return false;
     }
+// moje
+    public boolean isIn(double v) {
+        return false;
+    }
 
+    public Interval intersect(Interval interval) {
+        return null;
+    }
+
+    public static Interval intersect(Interval i, Interval i2) {
+        return null;
+    }
 }
